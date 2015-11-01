@@ -1,0 +1,22 @@
+html(lang='ru-RU')
+	head
+		meta(charset='UTF-8')
+		//- Просим IE не переключаться в последний режим
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		//- Корректное масштабирование на разных устройствах
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		//- CSS
+		link(rel='stylesheet', href='/css/vendor/normalize.css')
+		link(rel='stylesheet', href='/css/main.css')
+	body.page
+		.page-wrap
+			header.header
+				.s1-icons-and-contacts
+				.s2-logo-andd-search
+				nav.s-nav
+			.content-wrap
+		//- Vendor JS
+		//- jQuery from CDN
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+		//- jQuery from local url, if CDN fault
+		<script>window.jQuery || document.write('<script src="/js/vendor/jquery.min.js"><\/script>')</script>

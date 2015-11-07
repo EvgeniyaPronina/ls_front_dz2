@@ -7,16 +7,21 @@ html(lang='ru-RU')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		//- CSS
 		link(rel='stylesheet', href='/css/vendor/normalize.css')
+		link(rel='stylesheet', href='/css/vendor/jquery-ui.css')
 		link(rel='stylesheet', href='/css/main.css')
 	body.page
 		.page-wrap
-			header.header
-				.s1-icons-and-contacts
-				.s2-logo-andd-search
-				nav.s-nav
+			include _blocks/header.jade 
 			.content-wrap
+				include _blocks/left-menu.jade
+				include _blocks/catalog.jade
+			include _blocks/info-and-footer.jade
 		//- Vendor JS
 		//- jQuery from CDN
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
 		//- jQuery from local url, if CDN fault
 		<script>window.jQuery || document.write('<script src="/js/vendor/jquery.min.js"><\/script>')</script>
+		//- jQuery UI (http://jqueryui.com/)
+		script(src='../js/vendor/jquery-ui.min.js')
+		//- My JS
+		script(src='../js/main.js')

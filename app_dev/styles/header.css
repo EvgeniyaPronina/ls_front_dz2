@@ -1,0 +1,243 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic);
+.icons-sprite, .social-icons__icon.icon-fb, .social-icons__icon.icon-vk, .social-icons__icon.icon-tw {
+  background-image: url('../img/icons-s864f1694f5.png');
+  background-repeat: no-repeat;
+}
+
+.s1-icons-and-contacts {
+  background: #fff;
+  position: relative;
+  -moz-box-shadow: #ebedef 0px 2px 0px;
+  -webkit-box-shadow: #ebedef 0px 2px 0px;
+  box-shadow: #ebedef 0px 2px 0px;
+}
+
+.s1-icons-and-contacts-fixed-wide-wrap {
+  display: table;
+  width: 1130px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.s1-icons-and-contacts-fixed-wide {
+  display: table-cell;
+  vertical-align: middle;
+  height: 77px;
+}
+
+.social-icons {
+  float: left;
+  position: relative;
+  top: 3px;
+}
+
+.social-icons__icon {
+  display: inline-block;
+  margin-right: 12px;
+}
+.social-icons__icon.icon-fb {
+  background-position: 0 0;
+  width: 26px;
+  height: 26px;
+}
+.social-icons__icon.icon-vk {
+  background-position: 0 -431px;
+  width: 27px;
+  height: 26px;
+}
+.social-icons__icon.icon-tw {
+  background-position: 0 -355px;
+  width: 26px;
+  height: 26px;
+}
+
+.adress-phone-wrap {
+  float: right;
+}
+
+.adress {
+  display: inline-block;
+  font-size: 14px;
+  position: relative;
+}
+.adress:before {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  width: 12px;
+  height: 16px;
+  background: url(../img/map-pin.png);
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.phone {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 107px;
+  position: relative;
+}
+.phone:before {
+  display: inline-block;
+  position: absolute;
+  bottom: 2px;
+  left: -20px;
+  width: 12px;
+  height: 16px;
+  background: url(../img/telephone.png);
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.s2-logo-and-search {
+  position: relative;
+}
+
+.s2-logo-and-search-fixed-wide {
+  width: 1130px;
+  margin: auto;
+  padding: 0 15px;
+  height: 95px;
+}
+
+.logo {
+  border: none;
+  display: block;
+  float: left;
+  margin: 30px 58px 0 0;
+}
+
+.search-form {
+  float: left;
+  height: 34px;
+  *zoom: 1;
+  margin-top: 32px;
+}
+.search-form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.search-form__text, .search-form__submit {
+  float: left;
+  height: 34px;
+  border: 1px solid #dee1e4;
+  border-right: none;
+}
+
+.search-form__text {
+  font-size: 14px;
+  padding-left: 17px;
+  width: 288px;
+  -moz-border-radius: 4px 0px 0px 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.search-form__submit {
+  background: #ff6e35;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 0 14px;
+  -moz-border-radius: 0px 4px 4px 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.site-links {
+  float: right;
+  margin-top: 37px;
+}
+
+.site-links__item {
+  display: inline;
+  margin-left: 30px;
+}
+
+.site-links__link {
+  color: #333333;
+  font-weight: 600;
+}
+.site-links__link:hover {
+  color: #ff6600;
+}
+
+.s-nav {
+  background: #fff;
+  position: relative;
+  -moz-box-shadow: #ebedef 0px 2px 0px;
+  -webkit-box-shadow: #ebedef 0px 2px 0px;
+  box-shadow: #ebedef 0px 2px 0px;
+  margin-bottom: 30px;
+}
+
+.s-nav-fixed-wide {
+  width: 1130px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.nav-menu__item {
+  display: inline-block;
+}
+
+.nav-menu {
+  font-size: 0px;
+}
+
+.nav-menu__link {
+  display: block;
+  line-height: 52px;
+  text-decoration: none;
+  color: #333333;
+  padding: 0 18px;
+  font-size: 16px;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.nav-menu__link:hover {
+  background: #e4e2e2;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.nav-menu__link.active-link, .nav-menu__link.active-link:hover {
+  background: #ff6e35;
+  color: #fff;
+}
+
+.s-bread-crumbs {
+  margin-bottom: 21px;
+}
+
+.bread-crumbs {
+  width: 1130px;
+  margin: auto;
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+.bread-crumbs__link {
+  color: #333333;
+  text-decoration: none;
+}
+.bread-crumbs__link:hover {
+  text-decoration: underline;
+  color: #ff6600;
+}
+
+.page-header {
+  width: 1130px;
+  margin: auto;
+  padding: 0 15px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}

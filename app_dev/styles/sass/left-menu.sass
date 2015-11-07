@@ -1,0 +1,221 @@
+@import '_blocks/imports.sass'
+@import '_blocks/variables.sass'
+@import '_blocks/mixins.sass'
+
+.left-menu-wrap
+	width: 332px
+	float: left
+
+.tel-type
+	width: 332px
+	background: $mtr_color
+	border: 1px solid $btn_brd_color
+	+border-radius(5px)
+	margin-bottom: 38px
+	line-height: 40px
+	font-size: 14px
+
+.tel-type__item
+	padding-left: 27px
+	cursor: pointer
+	+transition(.1s)
+	&:hover
+		background: $bluegray_color_3
+		+transition(.2s)
+
+.left-menu
+	width: 332px
+	background: $mtr_color
+	border: 1px solid $btn_brd_color
+	+border-radius(5px)
+
+.filter-item
+	border-bottom: 1px solid $btn_brd_color
+	&:last-child
+		border-bottom: none
+
+.filter-title
+	width: 310px
+	font-weight: 600
+	line-height: 40px
+	overflow: hidden
+	text-overflow: ellipsis
+	white-space: nowrap
+	padding-left: 27px
+	padding-right: 25px
+	position: relative
+	display: block
+	cursor: pointer
+	&:after
+		content: ''
+		display: inline-block
+		background: url(../img/arrow.png)
+		background-repeat: no-repeat
+		width: 18px
+		height: 11px
+		position: absolute
+		right: 0px
+		top: 50%
+		+transition(.2s)
+		+transform(translateY(-50%))
+
+.inner-item
+	line-height: 37px
+
+.radio-label
+
+.radio-input, .checkbox-input
+	display: none
+
+.filter__choose-elem
+	border: 3px solid $btn_brd_color
+	padding: 6px
+	background-clip: content-box
+	width: 19px
+	height: 19px
+	+border-radius(50%)
+	display: inline-block
+	position: relative
+	top: 3px
+	margin-left: 27px
+	margin-right: 5px
+	+transition(.1s)
+	cursor: pointer
+
+.radio-input:checked + .filter__choose-elem
+	border-color: $btn_color
+	background-color: $btn_color
+	+transition(.1s)
+	padding: 2px
+
+.filter__choose-text
+	display: inline-block
+	font-size: 14px
+
+.filter__choose-elem-checkbox
+	width: 19px
+	height: 19px
+	border: 3px solid $btn_brd_color
+	background: url(../img/check.png)
+	background: $btn_brd_color
+	+border-radius(3px)
+	display: inline-block
+	position: relative
+	top: 3px
+	margin-left: 27px
+	margin-right: 5px
+	+transition(.1s)
+	cursor: pointer
+
+.checkbox-input:checked + .filter__choose-elem-checkbox
+	background: url(../img/check.png), $btn_color
+	background-repeat: no-repeat
+	background-position: center center
+	border-color: $btn_color
+	+transition(.1s)
+
+.clear-checkbox
+	margin-left: 27px
+	font-size: 14px
+	margin-bottom: 14px
+
+.clear-checkbox-link
+	color: $link_blue
+
+.range-slider__wrap-fields
+	+pie-clearfix
+	margin: 0 27px 30px
+
+.ui-slider
+	background: $btn_brd_color
+	height: 3px
+	position: relative
+	margin-top: 18px
+
+.ui-slider-range
+	background: $txt_color_orange
+
+.ui-slider-horizontal .ui-slider-handle
+	top: 1px
+	margin-left: -4px
+	width: 8px
+	height: 14px
+	cursor: pointer
+	&:focus
+		border: none
+		outline: none
+
+.range-slider__wrap-elem
+	+pie-clearfix
+
+.range-slider__text
+	font-size: 14px
+	margin-right: 14px
+
+.range-slider__input
+	width: 82px
+	line-height: 26px
+	font-size: 14px
+	border: 1px solid $btn_brd_color
+	+border-radius(4px)
+	padding-left: 9px
+	+box-shadow(inset rgba(0,0,0,.4) 0 1px 1px 0px)
+	display: inline-block
+
+.ui-slider-handle
+	background: url(../img/carette.png)
+	background-repeat: no-repeat
+
+.color-box-cont
+	margin-top: 6px
+	width: 236px
+	margin-left: 27px
+	+pie-clearfix
+
+.color-box
+	width: 37px
+	height: 37px
+	border: 1px solid $btn_brd_color
+	float: left
+	margin: 0 22px 22px 0
+	cursor: pointer
+	+transition(.1s)
+	&:hover
+		+box-shadow($txt_color_orange 0 0 2px 2px)
+		+transition(.1s)
+	&.white
+		background: #ffffff
+	&.gray
+		background: #cccccc
+	&.black
+		background: #000000
+	&.blue
+		background: #0a3153
+	&.red
+		background: #ff1800
+	&.yellow
+		background: #fff343
+	&.orange
+		background: #fb914a
+	&.green
+		background: #92c37c
+	&.cloud
+		background: #40a6ff
+	&.violet
+		background: #9870ad
+	&.purple
+		background: #dc78ad
+	&.brown
+		background: #7f401d
+
+.filter-content
+	height: 0px
+	overflow: hidden
+
+.filter-input:checked
+	&~.filter-title:after
+		+transform(rotate(180deg))
+		+transition(.2s)
+	&~.filter-content
+		height: auto
+

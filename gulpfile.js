@@ -11,7 +11,7 @@ var
 var
 	paths = {
 		jade : {
-			watchPaths  : 'app_dev/jade/**/*.jade', // Сюда смотрит вотчер.
+			watchPaths  : ['app_dev/jade/**/*.jade', 'app_dev/jade/_blocks/*.jade'], // Сюда смотрит вотчер.
 			compile     : 'app_dev/jade/*.jade', // Файлы, которые нужно компилировать
 			destination : 'app_dev/' // Путь, куда складываются компилированные файлы 
 		},
@@ -32,7 +32,7 @@ var
 
 		browserSync : {
 			baseDir     : 'app_dev/', // Папка, где находится index.html, который запускается при старте browser-sync.
-			watchPaths  : ['*.html', 'app_dev/css/**/*.css', 'app_dev/js/**/*.js'] // Отслеживаемые файлы, при изменеии которых перезапускается browser-sync.
+			watchPaths  : ['app_dev/*.html', 'app_dev/css/**/*.css', 'app_dev/js/**/*.js'] // Отслеживаемые файлы, при изменеии которых перезапускается browser-sync.
 		}
 	};
 

@@ -1,0 +1,184 @@
+@import '_blocks/imports.sass'
+@import '_blocks/variables.sass'
+@import '_blocks/mixins.sass'
+
+.s1-icons-and-contacts
+	background: $lght_color
+	position: relative
+	+box-shadow(#ebedef 0px 2px 0px)
+
+.s1-icons-and-contacts-fixed-wide-wrap
+	display: table
+	+width-1130
+
+.s1-icons-and-contacts-fixed-wide
+	display: table-cell
+	vertical-align: middle
+	height: 77px
+
+.social-icons
+	float: left
+	position: relative
+	top: 3px
+
+.social-icons__icon
+	display: inline-block
+	margin-right: 12px
+	&.icon-fb
+		@include icons-sprite(icon-fb)
+		$height: icons-sprite-height(icon-fb)
+		$width: icons-sprite-width(icon-fb)
+		width: $width
+		height: $height
+	&.icon-vk
+		@include icons-sprite(icon-vk)
+		$height: icons-sprite-height(icon-vk)
+		$width: icons-sprite-width(icon-vk)
+		width: $width
+		height: $height
+	&.icon-tw
+		@include icons-sprite(icon-tw)
+		$height: icons-sprite-height(icon-tw)
+		$width: icons-sprite-width(icon-tw)
+		width: $width
+		height: $height
+
+.adress-phone-wrap
+	float: right
+
+.adress
+	display: inline-block
+	font-size: 14px
+	position: relative
+	&:before
+		display: inline-block
+		position: absolute
+		bottom: 0
+		left: -20px
+		width: 12px
+		height: 16px
+		background: url(../img/map-pin.png)
+		background-repeat: no-repeat
+		content: ''
+
+.phone
+	display: inline-block
+	font-weight: 600
+	font-size: 18px
+	margin-left: 107px
+	position: relative
+	&:before
+		display: inline-block
+		position: absolute
+		bottom: 2px
+		left: -20px
+		width: 12px
+		height: 16px
+		background:  url(../img/telephone.png)
+		background-repeat: no-repeat
+		content: ''
+
+.s2-logo-and-search
+	position: relative
+
+.s2-logo-and-search-fixed-wide
+	+width-1130
+	height: 95px
+
+.logo
+	border: none
+	display: block
+	float: left
+	margin: 30px 58px 0 0
+	
+
+.search-form
+	float: left
+	height: 34px
+	+pie-clearfix
+	margin-top: 32px
+
+.search-form__text, .search-form__submit
+	float: left
+	height: 34px
+	border: 1px solid $btn_brd_color
+	border-right: none
+
+.search-form__text
+	font-size: 14px
+	padding-left: 17px
+	width: 288px
+	+border-radius(4px 0px 0px 4px)
+
+.search-form__submit
+	background: $btn_color
+	color: $lght_color
+	font-weight: 600
+	border: none
+	padding: 0 14px
+	+border-radius(0px 4px 4px 0px)
+
+.site-links
+	float: right
+	margin-top: 37px
+
+.site-links__item
+	display: inline
+	margin-left: 30px
+
+.site-links__link
+	color: $txt_color_main
+	font-weight: 600
+	&:hover
+		color: $txt_color_orange
+
+.s-nav
+	background: $lght_color
+	position: relative
+	+box-shadow(#ebedef 0px 2px 0px)
+	margin-bottom: 30px
+
+.s-nav-fixed-wide
+	+width-1130
+
+.nav-menu__item
+	display: inline-block
+
+.nav-menu
+	font-size: 0px
+
+.nav-menu__link
+	display: block
+	line-height: 52px
+	text-decoration: none
+	color: $txt_color_main
+	padding: 0 18px
+	font-size: 16px
+	+transition(.1s)
+	&:hover
+		background: $hover_color_1
+		+transition(.2s)
+	&.active-link,
+	&.active-link:hover
+		background: $btn_color
+		color: $lght_color
+
+.s-bread-crumbs
+	margin-bottom: 21px
+
+.bread-crumbs
+	+width-1130
+	font-size: 14px
+
+.bread-crumbs__link
+	color: $txt_color_main
+	text-decoration: none
+	&:hover
+		text-decoration: underline
+		color: $txt_color_orange
+
+.page-header
+	+width-1130
+	font-size: 20px
+	font-weight: bold
+	margin-bottom: 30px

@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic);
+.icons-sprite, .inverse-socials__item.item-vk, .inverse-socials__item.item-fb, .inverse-socials__item.item-tw {
+  background-image: url('../img/icons-s864f1694f5.png');
+  background-repeat: no-repeat;
+}
+
+.s-impot-info-fixed-wide {
+  width: 1130px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.impot-info-header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.impot-info-wrap {
+  font-size: 14px;
+  text-align: justify;
+  text-indent: 36px;
+  *zoom: 1;
+  margin-bottom: 15px;
+}
+.impot-info-wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.impot-info-col-left,
+.impot-info-col-right {
+  width: 530px;
+}
+
+.impot-info-col-left {
+  float: left;
+}
+
+.impot-info-col-right {
+  float: right;
+}
+
+.footer {
+  background: url(../img/footer_bg.jpg);
+  padding-top: 35px;
+  border-bottom: 1px solid transparent;
+}
+
+.footer-fixed-wide {
+  width: 1130px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.footer-content-wrap {
+  *zoom: 1;
+  margin-bottom: 25px;
+}
+.footer-content-wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer-content-left-col {
+  float: left;
+  width: 530px;
+}
+
+.logo-white {
+  display: block;
+  padding-top: 37px;
+}
+
+.footer-content-right-col {
+  float: right;
+  width: 530px;
+  text-align: right;
+}
+
+.nav-links-bottom {
+  position: relative;
+  left: 15px;
+}
+
+.nav-links-bottom__link {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: underline;
+  line-height: 34px;
+  padding: 0 15px;
+}
+.nav-links-bottom__link:hover {
+  text-decoration: none;
+}
+
+.inverse-socials {
+  margin-bottom: 18px;
+}
+
+.inverse-socials__item {
+  display: inline-block;
+  margin-left: 27px;
+}
+.inverse-socials__item.item-vk {
+  background-position: 0 -262px;
+  width: 43px;
+  height: 43px;
+}
+.inverse-socials__item.item-fb {
+  background-position: 0 -76px;
+  width: 43px;
+  height: 43px;
+}
+.inverse-socials__item.item-tw {
+  background-position: 0 -169px;
+  width: 43px;
+  height: 43px;
+}
+
+.inverse-socials__link {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 15px;
+}

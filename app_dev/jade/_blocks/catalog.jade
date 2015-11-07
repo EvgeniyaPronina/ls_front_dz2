@@ -1,0 +1,35 @@
+.catalog
+	.catalog-header
+		form.sort-by(action='#')
+			label.sort-by__text Сортировать по
+				select.select-by-list
+					option цене
+					option размеру экрана
+					option производителю
+		.cat-viev
+			.cat-viev__text Вид каталога
+			ul.cat-viev__icons
+				li.cat-viev__icon
+					.icon-tabl
+				li.cat-viev__icon
+					.icon-bar
+				li.cat-viev__icon
+					.icon-list
+	.catalog-goods
+		.catalog-goods__wrap
+			include catalog-item.jade
+			include catalog-item.jade
+			include catalog-item.jade
+			include catalog-item.jade
+			include catalog-item.jade
+			include catalog-item.jade
+			include catalog-item.jade
+			include catalog-item.jade
+			include catalog-item.jade
+		.pagination-box
+			.pagination
+				.pagination-item.pagination-item__left-arrow
+				.pagination-item.active 1
+				.pagination-item 2
+				.pagination-item 3
+				.pagination-item.pagination-item__right-arrow

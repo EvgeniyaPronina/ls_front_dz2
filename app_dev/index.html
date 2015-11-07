@@ -5,17 +5,678 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="/css/vendor/normalize.css"/>
+		<link rel="stylesheet" href="/css/vendor/jquery-ui.css"/>
 		<link rel="stylesheet" href="/css/main.css"/>
 	</head>
 	<body class="page">
 		<div class="page-wrap">
 			<header class="header">
-				<div class="s1-icons-and-contacts"></div>
-				<div class="s2-logo-andd-search"></div>
-				<nav class="s-nav"></nav>
+				<div class="s1-icons-and-contacts">
+					<div class="s1-icons-and-contacts-fixed-wide-wrap">
+						<div class="s1-icons-and-contacts-fixed-wide">
+							<ul class="social-icons">
+								<li class="social-icons__icon icon-fb"><a href="#" class="inverse-socials__link"></a></li>
+								<li class="social-icons__icon icon-vk"><a href="#" class="inverse-socials__link"></a></li>
+								<li class="social-icons__icon icon-tw"><a href="#" class="inverse-socials__link"></a></li>
+							</ul>
+							<div class="adress-phone-wrap">
+								<div class="adress">ул. Маяковская 6, офис 17</div>
+								<div class="phone">+7 (921) 123-12-13</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="s2-logo-and-search">
+					<div class="s2-logo-and-search-fixed-wide"><img src="/img/cooltech.png" class="logo"/>
+						<form class="search-form">
+							<input type="text" placeholder="Что будем искать" class="search-form__text"/>
+							<input type="submit" value="Найти" class="search-form__submit"/>
+						</form>
+						<ul class="site-links">
+							<li class="site-links__item"><a href="#" class="site-links__link">Карта проезда</a></li>
+							<li class="site-links__item"><a href="#" class="site-links__link">История заказов</a></li>
+							<li class="site-links__item"><a href="#" class="site-links__link">Корзина</a></li>
+						</ul>
+					</div>
+				</div>
+				<nav class="s-nav">
+					<div class="s-nav-fixed-wide">
+						<ul class="nav-menu">
+							<li class="nav-menu__item"><a href="#" class="nav-menu__link">Планшеты</a></li>
+							<li class="nav-menu__item"><a href="#" class="nav-menu__link active-link">Мобильные телефоны</a></li>
+							<li class="nav-menu__item"><a href="#" class="nav-menu__link">Mp3 плееры</a></li>
+							<li class="nav-menu__item"><a href="#" class="nav-menu__link">Персональные компьютеры</a></li>
+							<li class="nav-menu__item"><a href="#" class="nav-menu__link">Ноутбуки</a></li>
+							<li class="nav-menu__item"><a href="#" class="nav-menu__link">Аксессуары</a></li>
+							<li class="nav-menu__item"><a href="#" class="nav-menu__link">Бытовая техника</a></li>
+						</ul>
+					</div>
+				</nav>
+				<div class="s-bread-crumbs">
+					<div class="bread-crumbs"><a href="#" class="bread-crumbs__link">Главная</a><span> > </span><a href="#" class="bread-crumbs__link">Каталог</a></div>
+				</div>
+				<div class="s-page-header">
+					<div class="page-header">Мобильные телефоны</div>
+				</div>
 			</header>
-			<div class="content-wrap"></div>
+			<div class="content-wrap">
+				<div class="left-menu-wrap">
+					<div class="tel-type">
+						<ul>
+							<li class="tel-type__item">Флагманы</li>
+							<li class="tel-type__item">Бюджетная линейка</li>
+						</ul>
+					</div>
+					<div class="left-menu">
+						<ul class="filter-list">
+							<li class="filter-item">
+								<input id="ac-1" name="accordion-1" type="checkbox" class="filter-input hidden"/>
+								<label for="ac-1" class="filter-title left-menu__shops">Наличие в магазинах</label>
+								<div class="filter-content">
+									<ul class="inner-list">
+										<li class="inner-item">
+											<label class="radio-label">
+												<input type="radio" name="shops" id="all-shops" class="radio-input"/>
+												<div class="filter__choose-elem"></div>
+												<div class="filter__choose-text">Во всех магазинах</div>
+											</label>
+										</li>
+										<li class="inner-item">
+											<label class="radio-label">
+												<input type="radio" name="shops" id="closest-shop" class="radio-input"/>
+												<div class="filter__choose-elem"></div>
+												<div class="filter__choose-text">В ближайшем ко мне магазине</div>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="filter-item">
+								<input id="ac-2" name="accordion-1" type="checkbox" class="filter-input hidden"/>
+								<label for="ac-2" class="filter-title left-menu__brands">Бренды</label>
+								<div class="filter-content">
+									<ul class="inner-list">
+										<li class="inner-item">
+											<label class="checkbox-label">
+												<input type="checkbox" name="brands" id="lenovo" class="checkbox-input"/>
+												<div class="filter__choose-elem-checkbox"></div>
+												<div class="filter__choose-text">Lenovo</div>
+											</label>
+										</li>
+										<li class="inner-item">
+											<label class="checkbox-label">
+												<input type="checkbox" name="brands" id="apple" class="checkbox-input"/>
+												<div class="filter__choose-elem-checkbox"></div>
+												<div class="filter__choose-text">Apple</div>
+											</label>
+										</li>
+										<li class="inner-item">
+											<label class="checkbox-label">
+												<input type="checkbox" name="brands" id="samsung" class="checkbox-input"/>
+												<div class="filter__choose-elem-checkbox"></div>
+												<div class="filter__choose-text">Samsung</div>
+											</label>
+										</li>
+										<li class="inner-item">
+											<label class="checkbox-label">
+												<input type="checkbox" name="brands" id="asus" class="checkbox-input"/>
+												<div class="filter__choose-elem-checkbox"></div>
+												<div class="filter__choose-text">Asus</div>
+											</label>
+										</li>
+										<li class="inner-item">
+											<label class="checkbox-label">
+												<input type="checkbox" name="brands" id="motorola" class="checkbox-input"/>
+												<div class="filter__choose-elem-checkbox"></div>
+												<div class="filter__choose-text">Motorola</div>
+											</label>
+										</li>
+									</ul>
+									<div class="clear-checkbox"> <a href="#" class="clear-checkbox-link">Сбросить фильтр</a></div>
+								</div>
+							</li>
+							<li class="filter-item">
+								<input id="ac-3" name="accordion-1" type="checkbox" class="filter-input hidden"/>
+								<label for="ac-3" class="filter-title left-menu__price">Цена</label>
+								<div class="filter-content">
+									<div class="range-slider">
+										<div class="range-slider__wrap-fields">
+											<div class="range-slider__wrap-elem"><span class="left"><span class="range-slider__text">от</span>
+													<input type="text" value="0" class="range-slider__input range-slider__input-start"/></span><span class="right"><span class="range-slider__text">до</span>
+													<input type="text" value="25000" class="range-slider__input range-slider__input-end"/></span></div>
+											<div id="slider-range"></div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="filter-item">
+								<input id="ac-4" name="accordion-1" type="checkbox" class="filter-input hidden"/>
+								<label for="ac-4" class="filter-title left-menu__color">Цвет</label>
+								<div class="filter-content">
+									<div class="color-box-cont">
+										<div class="color-box white"></div>
+										<div class="color-box gray"></div>
+										<div class="color-box black"></div>
+										<div class="color-box blue"></div>
+										<div class="color-box red"></div>
+										<div class="color-box yellow"></div>
+										<div class="color-box orange"></div>
+										<div class="color-box green"></div>
+										<div class="color-box cloud"></div>
+										<div class="color-box violet"></div>
+										<div class="color-box purple"></div>
+										<div class="color-box brown"></div>
+									</div>
+								</div>
+							</li>
+							<li class="filter-item">
+								<input id="ac-5" name="accordion-1" type="checkbox" class="filter-input hidden"/>
+								<label for="ac-5" class="filter-title left-menu__os">Операционные системы</label>
+								<div class="filter-content">
+									<ul class="inner-list">
+										<li class="inner-item">
+											<label class="checkbox-label">
+												<input type="checkbox" name="os" id="android" class="checkbox-input"/>
+												<div class="filter__choose-elem-checkbox"></div>
+												<div class="filter__choose-text">Android</div>
+											</label>
+										</li>
+										<li class="inner-item">
+											<label class="checkbox-label">
+												<input type="checkbox" name="os" id="iOS" class="checkbox-input"/>
+												<div class="filter__choose-elem-checkbox"></div>
+												<div class="filter__choose-text">iOS</div>
+											</label>
+										</li>
+										<li class="inner-item">
+											<label class="checkbox-label">
+												<input type="checkbox" name="os" id="windowsmob" class="checkbox-input"/>
+												<div class="filter__choose-elem-checkbox"></div>
+												<div class="filter__choose-text">Windows Mobile</div>
+											</label>
+										</li>
+										<li class="inner-item">
+											<label class="checkbox-label">
+												<input type="checkbox" name="os" id="symbian" class="checkbox-input"/>
+												<div class="filter__choose-elem-checkbox"></div>
+												<div class="filter__choose-text">Symbian</div>
+											</label>
+										</li>
+										<li class="inner-item">
+											<label class="checkbox-label">
+												<input type="checkbox" name="os" id="custom" class="checkbox-input"/>
+												<div class="filter__choose-elem-checkbox"></div>
+												<div class="filter__choose-text">Custom</div>
+											</label>
+										</li>
+									</ul>
+									<div class="clear-checkbox"> <a href="#" class="clear-checkbox-link">Сбросить фильтр</a></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="catalog">
+					<div class="catalog-header">
+						<form action="#" class="sort-by">
+							<label class="sort-by__text">Сортировать по
+								<select class="select-by-list">
+									<option>цене</option>
+									<option>размеру экрана</option>
+									<option>производителю</option>
+								</select>
+							</label>
+						</form>
+						<div class="cat-viev">
+							<div class="cat-viev__text">Вид каталога</div>
+							<ul class="cat-viev__icons">
+								<li class="cat-viev__icon">
+									<div class="icon-tabl"></div>
+								</li>
+								<li class="cat-viev__icon">
+									<div class="icon-bar"></div>
+								</li>
+								<li class="cat-viev__icon">
+									<div class="icon-list"></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog-goods">
+						<div class="catalog-goods__wrap">
+							<div class="catalog-item">
+								<div class="catalog-item__pics-wrap">
+									<div class="catalog-item__bigpic"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__bigpic-file"/></div>
+									<div class="catalog-item__smlpics">
+										<div class="catalog-item__smlpic active"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_2.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_3.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+									</div>
+									<div class="catalog-item__articul hidden"><span class="gray-text">Артикул</span><span class="catalog-item__articul-text">189654</span></div>
+								</div>
+								<div class="catalog-item__header-and-desct-wrap">
+									<div class="catalog-item__header">Samsung GT-I9301I GALAXY S3</div>
+									<div class="catalog-item__description">
+										<div class="catalog-item__text-descr hidden">Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей. Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей.</div>
+										<div class="catalog-item__descr-item-wrap">
+											<div class="catalog-item__descr-item catalog-item__sim"><span class="catalog-item__descr-text left">Тип SIM-карты</span><span class="catalog-item__descr-text right">Micro-SIM</span></div>
+											<div class="catalog-item__descr-item catalog-item__simqut"><span class="catalog-item__descr-text left">Количество SIM-карт</span><span class="catalog-item__descr-text right">1</span></div>
+											<div class="catalog-item__descr-item catalog-item__color"><span class="catalog-item__descr-text left">Цвет</span><span class="catalog-item__descr-text right">Белый</span></div>
+											<div class="catalog-item__descr-item catalog-item__os"><span class="catalog-item__descr-text left">ОС</span><span class="catalog-item__descr-text right">Android</span></div>
+											<div class="catalog-item__descr-item catalog-item__3g"><span class="catalog-item__descr-text left">Связь 3G</span><span class="catalog-item__descr-text right">Есть</span></div>
+											<div class="catalog-item__descr-item catalog-item__4g"><span class="catalog-item__descr-text left">4G (LTE)</span><span class="catalog-item__descr-text right">Нет</span></div>
+											<div class="catalog-item__descr-item catalog-item__gps"><span class="catalog-item__descr-text left">GPS-модуль</span><span class="catalog-item__descr-text right">Есть</span></div>
+										</div>
+									</div>
+									<div class="catalog-item__rating">
+										<div class="catalog-item__rating-stars left">
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star light-star"></div>
+										</div>
+										<div class="catalog-item__rating-digit right"> <span>4</span></div>
+									</div>
+								</div>
+								<div class="catalog-item__price-and-buy-wrap">
+									<div class="catalog-item__price"><span class="catalog-item__price-text">11 290</span><span class="rub"></span></div>
+									<div class="catalog-item__buy">
+										<input type="button" value="В корзину" class="to-bucket right"/>
+										<div class="good-presents left">В наличии</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-item">
+								<div class="catalog-item__pics-wrap">
+									<div class="catalog-item__bigpic"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__bigpic-file"/></div>
+									<div class="catalog-item__smlpics">
+										<div class="catalog-item__smlpic active"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_2.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_3.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+									</div>
+									<div class="catalog-item__articul hidden"><span class="gray-text">Артикул</span><span class="catalog-item__articul-text">189654</span></div>
+								</div>
+								<div class="catalog-item__header-and-desct-wrap">
+									<div class="catalog-item__header">Samsung GT-I9301I GALAXY S3</div>
+									<div class="catalog-item__description">
+										<div class="catalog-item__text-descr hidden">Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей. Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей.</div>
+										<div class="catalog-item__descr-item-wrap">
+											<div class="catalog-item__descr-item catalog-item__sim"><span class="catalog-item__descr-text left">Тип SIM-карты</span><span class="catalog-item__descr-text right">Micro-SIM</span></div>
+											<div class="catalog-item__descr-item catalog-item__simqut"><span class="catalog-item__descr-text left">Количество SIM-карт</span><span class="catalog-item__descr-text right">1</span></div>
+											<div class="catalog-item__descr-item catalog-item__color"><span class="catalog-item__descr-text left">Цвет</span><span class="catalog-item__descr-text right">Белый</span></div>
+											<div class="catalog-item__descr-item catalog-item__os"><span class="catalog-item__descr-text left">ОС</span><span class="catalog-item__descr-text right">Android</span></div>
+											<div class="catalog-item__descr-item catalog-item__3g"><span class="catalog-item__descr-text left">Связь 3G</span><span class="catalog-item__descr-text right">Есть</span></div>
+											<div class="catalog-item__descr-item catalog-item__4g"><span class="catalog-item__descr-text left">4G (LTE)</span><span class="catalog-item__descr-text right">Нет</span></div>
+											<div class="catalog-item__descr-item catalog-item__gps"><span class="catalog-item__descr-text left">GPS-модуль</span><span class="catalog-item__descr-text right">Есть</span></div>
+										</div>
+									</div>
+									<div class="catalog-item__rating">
+										<div class="catalog-item__rating-stars left">
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star light-star"></div>
+										</div>
+										<div class="catalog-item__rating-digit right"> <span>4</span></div>
+									</div>
+								</div>
+								<div class="catalog-item__price-and-buy-wrap">
+									<div class="catalog-item__price"><span class="catalog-item__price-text">11 290</span><span class="rub"></span></div>
+									<div class="catalog-item__buy">
+										<input type="button" value="В корзину" class="to-bucket right"/>
+										<div class="good-presents left">В наличии</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-item">
+								<div class="catalog-item__pics-wrap">
+									<div class="catalog-item__bigpic"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__bigpic-file"/></div>
+									<div class="catalog-item__smlpics">
+										<div class="catalog-item__smlpic active"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_2.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_3.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+									</div>
+									<div class="catalog-item__articul hidden"><span class="gray-text">Артикул</span><span class="catalog-item__articul-text">189654</span></div>
+								</div>
+								<div class="catalog-item__header-and-desct-wrap">
+									<div class="catalog-item__header">Samsung GT-I9301I GALAXY S3</div>
+									<div class="catalog-item__description">
+										<div class="catalog-item__text-descr hidden">Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей. Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей.</div>
+										<div class="catalog-item__descr-item-wrap">
+											<div class="catalog-item__descr-item catalog-item__sim"><span class="catalog-item__descr-text left">Тип SIM-карты</span><span class="catalog-item__descr-text right">Micro-SIM</span></div>
+											<div class="catalog-item__descr-item catalog-item__simqut"><span class="catalog-item__descr-text left">Количество SIM-карт</span><span class="catalog-item__descr-text right">1</span></div>
+											<div class="catalog-item__descr-item catalog-item__color"><span class="catalog-item__descr-text left">Цвет</span><span class="catalog-item__descr-text right">Белый</span></div>
+											<div class="catalog-item__descr-item catalog-item__os"><span class="catalog-item__descr-text left">ОС</span><span class="catalog-item__descr-text right">Android</span></div>
+											<div class="catalog-item__descr-item catalog-item__3g"><span class="catalog-item__descr-text left">Связь 3G</span><span class="catalog-item__descr-text right">Есть</span></div>
+											<div class="catalog-item__descr-item catalog-item__4g"><span class="catalog-item__descr-text left">4G (LTE)</span><span class="catalog-item__descr-text right">Нет</span></div>
+											<div class="catalog-item__descr-item catalog-item__gps"><span class="catalog-item__descr-text left">GPS-модуль</span><span class="catalog-item__descr-text right">Есть</span></div>
+										</div>
+									</div>
+									<div class="catalog-item__rating">
+										<div class="catalog-item__rating-stars left">
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star light-star"></div>
+										</div>
+										<div class="catalog-item__rating-digit right"> <span>4</span></div>
+									</div>
+								</div>
+								<div class="catalog-item__price-and-buy-wrap">
+									<div class="catalog-item__price"><span class="catalog-item__price-text">11 290</span><span class="rub"></span></div>
+									<div class="catalog-item__buy">
+										<input type="button" value="В корзину" class="to-bucket right"/>
+										<div class="good-presents left">В наличии</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-item">
+								<div class="catalog-item__pics-wrap">
+									<div class="catalog-item__bigpic"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__bigpic-file"/></div>
+									<div class="catalog-item__smlpics">
+										<div class="catalog-item__smlpic active"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_2.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_3.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+									</div>
+									<div class="catalog-item__articul hidden"><span class="gray-text">Артикул</span><span class="catalog-item__articul-text">189654</span></div>
+								</div>
+								<div class="catalog-item__header-and-desct-wrap">
+									<div class="catalog-item__header">Samsung GT-I9301I GALAXY S3</div>
+									<div class="catalog-item__description">
+										<div class="catalog-item__text-descr hidden">Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей. Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей.</div>
+										<div class="catalog-item__descr-item-wrap">
+											<div class="catalog-item__descr-item catalog-item__sim"><span class="catalog-item__descr-text left">Тип SIM-карты</span><span class="catalog-item__descr-text right">Micro-SIM</span></div>
+											<div class="catalog-item__descr-item catalog-item__simqut"><span class="catalog-item__descr-text left">Количество SIM-карт</span><span class="catalog-item__descr-text right">1</span></div>
+											<div class="catalog-item__descr-item catalog-item__color"><span class="catalog-item__descr-text left">Цвет</span><span class="catalog-item__descr-text right">Белый</span></div>
+											<div class="catalog-item__descr-item catalog-item__os"><span class="catalog-item__descr-text left">ОС</span><span class="catalog-item__descr-text right">Android</span></div>
+											<div class="catalog-item__descr-item catalog-item__3g"><span class="catalog-item__descr-text left">Связь 3G</span><span class="catalog-item__descr-text right">Есть</span></div>
+											<div class="catalog-item__descr-item catalog-item__4g"><span class="catalog-item__descr-text left">4G (LTE)</span><span class="catalog-item__descr-text right">Нет</span></div>
+											<div class="catalog-item__descr-item catalog-item__gps"><span class="catalog-item__descr-text left">GPS-модуль</span><span class="catalog-item__descr-text right">Есть</span></div>
+										</div>
+									</div>
+									<div class="catalog-item__rating">
+										<div class="catalog-item__rating-stars left">
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star light-star"></div>
+										</div>
+										<div class="catalog-item__rating-digit right"> <span>4</span></div>
+									</div>
+								</div>
+								<div class="catalog-item__price-and-buy-wrap">
+									<div class="catalog-item__price"><span class="catalog-item__price-text">11 290</span><span class="rub"></span></div>
+									<div class="catalog-item__buy">
+										<input type="button" value="В корзину" class="to-bucket right"/>
+										<div class="good-presents left">В наличии</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-item">
+								<div class="catalog-item__pics-wrap">
+									<div class="catalog-item__bigpic"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__bigpic-file"/></div>
+									<div class="catalog-item__smlpics">
+										<div class="catalog-item__smlpic active"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_2.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_3.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+									</div>
+									<div class="catalog-item__articul hidden"><span class="gray-text">Артикул</span><span class="catalog-item__articul-text">189654</span></div>
+								</div>
+								<div class="catalog-item__header-and-desct-wrap">
+									<div class="catalog-item__header">Samsung GT-I9301I GALAXY S3</div>
+									<div class="catalog-item__description">
+										<div class="catalog-item__text-descr hidden">Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей. Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей.</div>
+										<div class="catalog-item__descr-item-wrap">
+											<div class="catalog-item__descr-item catalog-item__sim"><span class="catalog-item__descr-text left">Тип SIM-карты</span><span class="catalog-item__descr-text right">Micro-SIM</span></div>
+											<div class="catalog-item__descr-item catalog-item__simqut"><span class="catalog-item__descr-text left">Количество SIM-карт</span><span class="catalog-item__descr-text right">1</span></div>
+											<div class="catalog-item__descr-item catalog-item__color"><span class="catalog-item__descr-text left">Цвет</span><span class="catalog-item__descr-text right">Белый</span></div>
+											<div class="catalog-item__descr-item catalog-item__os"><span class="catalog-item__descr-text left">ОС</span><span class="catalog-item__descr-text right">Android</span></div>
+											<div class="catalog-item__descr-item catalog-item__3g"><span class="catalog-item__descr-text left">Связь 3G</span><span class="catalog-item__descr-text right">Есть</span></div>
+											<div class="catalog-item__descr-item catalog-item__4g"><span class="catalog-item__descr-text left">4G (LTE)</span><span class="catalog-item__descr-text right">Нет</span></div>
+											<div class="catalog-item__descr-item catalog-item__gps"><span class="catalog-item__descr-text left">GPS-модуль</span><span class="catalog-item__descr-text right">Есть</span></div>
+										</div>
+									</div>
+									<div class="catalog-item__rating">
+										<div class="catalog-item__rating-stars left">
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star light-star"></div>
+										</div>
+										<div class="catalog-item__rating-digit right"> <span>4</span></div>
+									</div>
+								</div>
+								<div class="catalog-item__price-and-buy-wrap">
+									<div class="catalog-item__price"><span class="catalog-item__price-text">11 290</span><span class="rub"></span></div>
+									<div class="catalog-item__buy">
+										<input type="button" value="В корзину" class="to-bucket right"/>
+										<div class="good-presents left">В наличии</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-item">
+								<div class="catalog-item__pics-wrap">
+									<div class="catalog-item__bigpic"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__bigpic-file"/></div>
+									<div class="catalog-item__smlpics">
+										<div class="catalog-item__smlpic active"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_2.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_3.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+									</div>
+									<div class="catalog-item__articul hidden"><span class="gray-text">Артикул</span><span class="catalog-item__articul-text">189654</span></div>
+								</div>
+								<div class="catalog-item__header-and-desct-wrap">
+									<div class="catalog-item__header">Samsung GT-I9301I GALAXY S3</div>
+									<div class="catalog-item__description">
+										<div class="catalog-item__text-descr hidden">Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей. Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей.</div>
+										<div class="catalog-item__descr-item-wrap">
+											<div class="catalog-item__descr-item catalog-item__sim"><span class="catalog-item__descr-text left">Тип SIM-карты</span><span class="catalog-item__descr-text right">Micro-SIM</span></div>
+											<div class="catalog-item__descr-item catalog-item__simqut"><span class="catalog-item__descr-text left">Количество SIM-карт</span><span class="catalog-item__descr-text right">1</span></div>
+											<div class="catalog-item__descr-item catalog-item__color"><span class="catalog-item__descr-text left">Цвет</span><span class="catalog-item__descr-text right">Белый</span></div>
+											<div class="catalog-item__descr-item catalog-item__os"><span class="catalog-item__descr-text left">ОС</span><span class="catalog-item__descr-text right">Android</span></div>
+											<div class="catalog-item__descr-item catalog-item__3g"><span class="catalog-item__descr-text left">Связь 3G</span><span class="catalog-item__descr-text right">Есть</span></div>
+											<div class="catalog-item__descr-item catalog-item__4g"><span class="catalog-item__descr-text left">4G (LTE)</span><span class="catalog-item__descr-text right">Нет</span></div>
+											<div class="catalog-item__descr-item catalog-item__gps"><span class="catalog-item__descr-text left">GPS-модуль</span><span class="catalog-item__descr-text right">Есть</span></div>
+										</div>
+									</div>
+									<div class="catalog-item__rating">
+										<div class="catalog-item__rating-stars left">
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star light-star"></div>
+										</div>
+										<div class="catalog-item__rating-digit right"> <span>4</span></div>
+									</div>
+								</div>
+								<div class="catalog-item__price-and-buy-wrap">
+									<div class="catalog-item__price"><span class="catalog-item__price-text">11 290</span><span class="rub"></span></div>
+									<div class="catalog-item__buy">
+										<input type="button" value="В корзину" class="to-bucket right"/>
+										<div class="good-presents left">В наличии</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-item">
+								<div class="catalog-item__pics-wrap">
+									<div class="catalog-item__bigpic"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__bigpic-file"/></div>
+									<div class="catalog-item__smlpics">
+										<div class="catalog-item__smlpic active"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_2.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_3.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+									</div>
+									<div class="catalog-item__articul hidden"><span class="gray-text">Артикул</span><span class="catalog-item__articul-text">189654</span></div>
+								</div>
+								<div class="catalog-item__header-and-desct-wrap">
+									<div class="catalog-item__header">Samsung GT-I9301I GALAXY S3</div>
+									<div class="catalog-item__description">
+										<div class="catalog-item__text-descr hidden">Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей. Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей.</div>
+										<div class="catalog-item__descr-item-wrap">
+											<div class="catalog-item__descr-item catalog-item__sim"><span class="catalog-item__descr-text left">Тип SIM-карты</span><span class="catalog-item__descr-text right">Micro-SIM</span></div>
+											<div class="catalog-item__descr-item catalog-item__simqut"><span class="catalog-item__descr-text left">Количество SIM-карт</span><span class="catalog-item__descr-text right">1</span></div>
+											<div class="catalog-item__descr-item catalog-item__color"><span class="catalog-item__descr-text left">Цвет</span><span class="catalog-item__descr-text right">Белый</span></div>
+											<div class="catalog-item__descr-item catalog-item__os"><span class="catalog-item__descr-text left">ОС</span><span class="catalog-item__descr-text right">Android</span></div>
+											<div class="catalog-item__descr-item catalog-item__3g"><span class="catalog-item__descr-text left">Связь 3G</span><span class="catalog-item__descr-text right">Есть</span></div>
+											<div class="catalog-item__descr-item catalog-item__4g"><span class="catalog-item__descr-text left">4G (LTE)</span><span class="catalog-item__descr-text right">Нет</span></div>
+											<div class="catalog-item__descr-item catalog-item__gps"><span class="catalog-item__descr-text left">GPS-модуль</span><span class="catalog-item__descr-text right">Есть</span></div>
+										</div>
+									</div>
+									<div class="catalog-item__rating">
+										<div class="catalog-item__rating-stars left">
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star light-star"></div>
+										</div>
+										<div class="catalog-item__rating-digit right"> <span>4</span></div>
+									</div>
+								</div>
+								<div class="catalog-item__price-and-buy-wrap">
+									<div class="catalog-item__price"><span class="catalog-item__price-text">11 290</span><span class="rub"></span></div>
+									<div class="catalog-item__buy">
+										<input type="button" value="В корзину" class="to-bucket right"/>
+										<div class="good-presents left">В наличии</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-item">
+								<div class="catalog-item__pics-wrap">
+									<div class="catalog-item__bigpic"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__bigpic-file"/></div>
+									<div class="catalog-item__smlpics">
+										<div class="catalog-item__smlpic active"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_2.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_3.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+									</div>
+									<div class="catalog-item__articul hidden"><span class="gray-text">Артикул</span><span class="catalog-item__articul-text">189654</span></div>
+								</div>
+								<div class="catalog-item__header-and-desct-wrap">
+									<div class="catalog-item__header">Samsung GT-I9301I GALAXY S3</div>
+									<div class="catalog-item__description">
+										<div class="catalog-item__text-descr hidden">Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей. Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей.</div>
+										<div class="catalog-item__descr-item-wrap">
+											<div class="catalog-item__descr-item catalog-item__sim"><span class="catalog-item__descr-text left">Тип SIM-карты</span><span class="catalog-item__descr-text right">Micro-SIM</span></div>
+											<div class="catalog-item__descr-item catalog-item__simqut"><span class="catalog-item__descr-text left">Количество SIM-карт</span><span class="catalog-item__descr-text right">1</span></div>
+											<div class="catalog-item__descr-item catalog-item__color"><span class="catalog-item__descr-text left">Цвет</span><span class="catalog-item__descr-text right">Белый</span></div>
+											<div class="catalog-item__descr-item catalog-item__os"><span class="catalog-item__descr-text left">ОС</span><span class="catalog-item__descr-text right">Android</span></div>
+											<div class="catalog-item__descr-item catalog-item__3g"><span class="catalog-item__descr-text left">Связь 3G</span><span class="catalog-item__descr-text right">Есть</span></div>
+											<div class="catalog-item__descr-item catalog-item__4g"><span class="catalog-item__descr-text left">4G (LTE)</span><span class="catalog-item__descr-text right">Нет</span></div>
+											<div class="catalog-item__descr-item catalog-item__gps"><span class="catalog-item__descr-text left">GPS-модуль</span><span class="catalog-item__descr-text right">Есть</span></div>
+										</div>
+									</div>
+									<div class="catalog-item__rating">
+										<div class="catalog-item__rating-stars left">
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star light-star"></div>
+										</div>
+										<div class="catalog-item__rating-digit right"> <span>4</span></div>
+									</div>
+								</div>
+								<div class="catalog-item__price-and-buy-wrap">
+									<div class="catalog-item__price"><span class="catalog-item__price-text">11 290</span><span class="rub"></span></div>
+									<div class="catalog-item__buy">
+										<input type="button" value="В корзину" class="to-bucket right"/>
+										<div class="good-presents left">В наличии</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-item">
+								<div class="catalog-item__pics-wrap">
+									<div class="catalog-item__bigpic"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__bigpic-file"/></div>
+									<div class="catalog-item__smlpics">
+										<div class="catalog-item__smlpic active"><img src="../img/tel_1.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_2.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+										<div class="catalog-item__smlpic"><img src="../img/tel_3.png" alt="Samsung" class="catalog-item__smlpic-file"/></div>
+									</div>
+									<div class="catalog-item__articul hidden"><span class="gray-text">Артикул</span><span class="catalog-item__articul-text">189654</span></div>
+								</div>
+								<div class="catalog-item__header-and-desct-wrap">
+									<div class="catalog-item__header">Samsung GT-I9301I GALAXY S3</div>
+									<div class="catalog-item__description">
+										<div class="catalog-item__text-descr hidden">Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей. Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей.</div>
+										<div class="catalog-item__descr-item-wrap">
+											<div class="catalog-item__descr-item catalog-item__sim"><span class="catalog-item__descr-text left">Тип SIM-карты</span><span class="catalog-item__descr-text right">Micro-SIM</span></div>
+											<div class="catalog-item__descr-item catalog-item__simqut"><span class="catalog-item__descr-text left">Количество SIM-карт</span><span class="catalog-item__descr-text right">1</span></div>
+											<div class="catalog-item__descr-item catalog-item__color"><span class="catalog-item__descr-text left">Цвет</span><span class="catalog-item__descr-text right">Белый</span></div>
+											<div class="catalog-item__descr-item catalog-item__os"><span class="catalog-item__descr-text left">ОС</span><span class="catalog-item__descr-text right">Android</span></div>
+											<div class="catalog-item__descr-item catalog-item__3g"><span class="catalog-item__descr-text left">Связь 3G</span><span class="catalog-item__descr-text right">Есть</span></div>
+											<div class="catalog-item__descr-item catalog-item__4g"><span class="catalog-item__descr-text left">4G (LTE)</span><span class="catalog-item__descr-text right">Нет</span></div>
+											<div class="catalog-item__descr-item catalog-item__gps"><span class="catalog-item__descr-text left">GPS-модуль</span><span class="catalog-item__descr-text right">Есть</span></div>
+										</div>
+									</div>
+									<div class="catalog-item__rating">
+										<div class="catalog-item__rating-stars left">
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star red-star"></div>
+											<div class="catalog-item__rating-star light-star"></div>
+										</div>
+										<div class="catalog-item__rating-digit right"> <span>4</span></div>
+									</div>
+								</div>
+								<div class="catalog-item__price-and-buy-wrap">
+									<div class="catalog-item__price"><span class="catalog-item__price-text">11 290</span><span class="rub"></span></div>
+									<div class="catalog-item__buy">
+										<input type="button" value="В корзину" class="to-bucket right"/>
+										<div class="good-presents left">В наличии</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pagination-box">
+							<div class="pagination">
+								<div class="pagination-item pagination-item__left-arrow"></div>
+								<div class="pagination-item active">1</div>
+								<div class="pagination-item">2</div>
+								<div class="pagination-item">3</div>
+								<div class="pagination-item pagination-item__right-arrow"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="s-impot-info-fixed-wide">
+				<div class="impot-info-header">Важная информация</div>
+				<div class="impot-info-wrap">
+					<div class="impot-info-col-left">
+						<p>Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+						<p>Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</p>
+						<p>Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+					</div>
+					<div class="impot-info-col-right">
+						<p>Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+						<p>Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer-fixed-wide">
+					<div class="footer-content-wrap">
+						<div class="footer-content-left-col"><img src="../img/cooltech-white.png" alt="Logo Cooltech" class="logo-white"/></div>
+						<div class="footer-content-right-col">
+							<div class="inverse-socials">
+								<div class="inverse-socials__item item-vk"><a href="#" class="inverse-socials__link"></a></div>
+								<div class="inverse-socials__item item-fb"><a href="#" class="inverse-socials__link"></a></div>
+								<div class="inverse-socials__item item-tw"><a href="#" class="inverse-socials__link"></a></div>
+							</div>
+							<div class="nav-links-bottom"><a href="#" class="nav-links-bottom__link"> <span class="nowrap">Планшеты</span></a><a href="#" class="nav-links-bottom__link"> <span class="nowrap">Мобильные телефоны</span></a><a href="#" class="nav-links-bottom__link"> <span class="nowrap">Mp3 плееры</span></a><a href="#" class="nav-links-bottom__link"> <span class="nowrap">Персональные компьютеры</span></a><a href="#" class="nav-links-bottom__link"> <span class="nowrap">Ноутбуки</span></a><a href="#" class="nav-links-bottom__link"> <span class="nowrap">Аксессуары</span></a><a href="#" class="nav-links-bottom__link"> <span class="nowrap">Бытовая техника</span></a></div>
+						</div>
+					</div>
+					<div class="copyright">All rights reserved. 2015. no copy alowed</div>
+				</div>
+			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script>window.jQuery || document.write('<script src="/js/vendor/jquery.min.js"><\/script>')</script>
+		<script src="../js/vendor/jquery-ui.min.js"></script>
+		<script src="../js/main.js"></script>
 	</body>
 </html>

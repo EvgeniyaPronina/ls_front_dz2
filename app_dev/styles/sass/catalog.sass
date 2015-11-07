@@ -1,0 +1,361 @@
+@import '_blocks/imports.sass'
+@import '_blocks/variables.sass'
+@import '_blocks/mixins.sass'
+
+.catalog
+	width: 763px
+	float: right
+	padding-left: 3px
+
+.catalog-header
+	background: $cat_bg_color
+	margin-left: 17px
+	margin-bottom: 20px
+	border: 1px solid $btn_brd_color
+	+border-radius(5px)
+	height: 53px
+
+.sort-by
+	float: left
+	font-size: 14px
+	color: $txt_color_bluegray
+
+.sort-by__text
+	display: inline-block
+	margin: 14px 0 0 20px
+
+.cat-viev
+	float: right
+
+.cat-viev__text
+	float: left
+	font-size: 14px
+	color: $txt_color_bluegray
+	margin: 14px 20px 0 0
+
+.sort-by__list
+	display: inline-block
+
+.cat-viev__icons
+	float: right
+	font-size: 0
+
+.cat-viev__icon
+	display: inline-block
+	position: relative
+	font-size: 14px
+	width: 51px
+	height: 51px
+	border-left: 1px solid $btn_brd_color
+
+$viev-spacing: 50px
+@import 'viev/*.png'
+
+.icon-tabl
+	@include viev-sprite(view-1)
+	$height: viev-sprite-height(view-1)
+	$width: viev-sprite-width(view-1)
+	width: $width
+	height: $height
+	position: absolute
+	top: 50%
+	left: 50%
+	+transform(translate(-50%, -50%))
+	cursor: pointer
+
+.icon-bar
+	@include viev-sprite(view-2)
+	$height: viev-sprite-height(view-2)
+	$width: viev-sprite-width(view-2)
+	width: $width
+	height: $height
+	position: absolute
+	top: 50%
+	left: 50%
+	+transform(translate(-50%, -50%))
+	cursor: pointer
+
+.icon-list
+	@include viev-sprite(view-3)
+	$height: viev-sprite-height(view-3)
+	$width: viev-sprite-width(view-3)
+	width: $width
+	height: $height
+	position: absolute
+	top: 50%
+	left: 50%
+	+transform(translate(-50%, -50%))
+	cursor: pointer
+
+.catalog-item
+	width: 233px
+	background: $mtr_color
+	+border-radius(5px)
+	padding-top: 19px
+	padding-bottom: 19px
+	margin-bottom: 20px
+	border: 1px solid $btn_brd_color
+	font-size: 14px
+	margin-left: 17px
+	display: inline-block
+	position: relative
+	+transition(.1s)
+	+pie-clearfix
+	&:hover
+		+box-shadow(rgba(0,0,0,.3) 0 0 8px 1px)
+		+transition(.2s)
+
+.z-index
+	z-index: 2
+
+.catalog-item_width-auto
+	width: 743px
+
+.catalog-item_no-margin
+	margin-bottom: 0
+
+.catalog-item__pics-wrap
+
+.catalog-item__pics-wrap_width182
+	width: 182px
+
+.catalog-item__bigpic
+	width: 138px
+	height: 136px
+	border: 1px solid $btn_brd_color
+	+border-radius(2px)
+	margin: auto
+	position: relative
+	margin-bottom: 15px
+
+.catalog-item__bigpic-file
+	position: absolute
+	top: 50%
+	left: 50%
+	+transform(translate(-50%, -50%))
+
+.catalog-item__smlpics
+	+pie-clearfix
+	width: 138px
+	margin: auto
+	margin-bottom: 15px
+
+.catalog-item__smlpic
+	width: 34px
+	height: 34px
+	border: 1px solid $btn_brd_color
+	float: left
+	margin: 0 9px
+	+border-radius(2px)
+	cursor: pointer
+	position: relative
+	&:hover,
+	&.active
+		border: 1px solid $txt_color_orange
+	&:first-child
+		margin-left: 0
+	&:last-child
+		margin-right: 0
+
+.catalog-item__smlpic-file
+	max-width: 28px
+	max-height: 28px
+	position: absolute
+	top: 50%
+	left: 50%
+	+transform(translate(-50%, -50%))
+
+.catalog-item__articul
+	text-align: center
+	span
+		padding: 0 3px
+	span:first-child
+		color: $txt_color_strange
+
+.catalog-item__header-and-desct-wrap
+	+pie-clearfix
+
+.catalog-item__header-and-desct-wrap_tab-style
+	width: 404px
+
+.catalog-item__header
+	font-weight: 600
+	text-align: center
+	min-height: 38px
+	padding: 0 15px
+	margin-bottom: 3px
+
+.catalog-item__header_tab-style
+	text-align: left
+	font-size: 16px
+	padding: 0
+
+.catalog-item__description
+	margin-bottom: 5px
+
+.catalog-item__descr-item-wrap
+	+pie-clearfix
+
+.catalog-item__descr-item
+	margin: 0 10px
+	+pie-clearfix
+	line-height: 20px
+	&:nth-child(odd)
+		background: $item_bg_color
+
+.catalog-item__descr-text
+	padding: 0 3px
+
+.catalog-item__rating
+	+pie-clearfix
+	width: 135px
+	margin: auto
+	margin-bottom: 4px
+
+.catalog-item__rating_tab-style
+	margin: 0
+	margin-top: 18px
+
+$stars-spacing: 20px
+
+@import 'stars/*.png'
+
+.catalog-item__rating-star
+	display: inline-block
+
+.red-star
+	@include stars-sprite(star_red)
+	$height: stars-sprite-height(star_red)
+	$width: stars-sprite-width(star_red)
+	width: $width
+	height: $height
+
+.light-star
+	@include stars-sprite(star_white)
+	$height: stars-sprite-height(star_white)
+	$width: stars-sprite-width(star_white)
+	width: $width
+	height: $height
+
+.catalog-item__rating-digit
+	background: $bluegray_color_2
+	padding: 0 10px
+	+border-radius(15px)
+	color: $lght_color
+	font-size: 12px
+	font-weight: 600
+
+.catalog-item__price-and-buy-wrap
+	+pie-clearfix
+
+.catalog-item__price-and-buy-wrap-tab-style
+	position: absolute
+	width: 147px
+	right: 0
+	top: 20px
+	bottom: 20px
+	border-left: 1px solid $btn_brd_color
+	padding-right: 15px
+
+
+.catalog-item__price
+	text-align: center
+	margin-bottom: 7px
+
+.catalog-item__price_tab-style
+	text-align: right
+
+.catalog-item__price-text
+	font-weight: 600
+	font-size: 20px
+	margin-right: 5px
+	margin-left: 10px
+
+.rub
+	content: ''
+	display: inline-block
+	background: url(../img/rub.png)
+	width: 12px
+	height: 14px
+	background-repeat: no-repeat
+	margin-right: 10px
+
+.catalog-item__buy
+	+pie-clearfix
+	font-weight: 700
+	margin: 0 10px
+
+.catalog-item__buy_tab-style
+	position: absolute
+	bottom: 0
+	right: 13px
+
+.good-presents
+	color: $txt_color_strange
+	font-size: 12px
+	padding-left: 25px
+	background: url(../img/green_point.png)
+	background-repeat: no-repeat
+	background-position: 10px center
+	margin-top: 7px
+
+.to-bucket
+	color: $lght_color
+	font-size: 14px
+	background: $btn_color
+	+border-radius(4px)
+	padding: 5px 13px 7px
+
+.select-by-list
+	background: url(../img/select_arrow.png), $lght_color 
+	background-repeat: no-repeat
+	background-position: right center
+	cursor: pointer
+	min-width: 150px
+	+appearance(none)
+	border: 1px solid $btn_brd_color
+	+border-radius(3px)
+	padding-left: 14px
+	+box-shadow(inset rgba(0,0,0,.4) 0 1px 1px 0px)
+	line-height: 25px
+	margin-left: 10px
+
+.pagination-box
+	text-align: right
+	margin-bottom: 20px
+	padding-top: 45px
+
+.pagination,
+.pagination-item
+	display: inline-block
+
+.pagination-item
+	height: 25px
+	min-width: 26px
+	padding: 0 9px
+	background: $mtr_color
+	line-height: 23px
+	+border-radius(4px)
+	border: 1px solid $btn_brd_color
+	color: $txt_color_strange
+	font-size: 12px
+	font-weight: bold
+	cursor: pointer
+	vertical-align: bottom
+	+transition(.1s)
+	&:hover
+		+box-shadow(rgba(0,0,0,.3) 0 1px 2px 0)
+		+transition(.2s)
+	&.active
+		background: $mid_gray
+		border-color: $dark_gray
+
+.pagination-item__left-arrow
+	background: url(../img/pag-arrow-left.png), $mtr_color
+	background-repeat: no-repeat
+	background-position: center center
+
+.pagination-item__right-arrow
+	background: url(../img/pag-arrow-right.png), $mtr_color
+	background-repeat: no-repeat
+	background-position: center center

@@ -1,18 +1,47 @@
-@import "../compass/css3"
+@import '_blocks/imports.sass'
+@import '_blocks/variables.sass'
+@import '_blocks/mixins.sass'
 
-// font-family: 'Open Sans', sans-serif
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic)
 
-$bg_color: #f4f4f4
-$mtr_color: #fbfbfb
-$btn_color: #ff6e35
-$lght_color: #fff
+*
+	box-sizing: border-box
+
+html
+	font-family: 'Open Sans', sans-serif
+	font-size: 16px
+	color: $txt_color_main
+
+body
+	min-width: $width-1130
+
+ul
+	padding: 0
+	margin: 0
+
+li
+	list-style-type: none
+
+input
+	border: none
+	padding: 0
+	display: block
 
 .page
 	background: $bg_color
 
-.s1-icons-and-contacts
-	background: $lght_color
-	position: relative
-	min-height: 77px
-	+box-shadow: (rgba(0,0,0,.3) 0px 2px 0px)
+.content-wrap
+	+width-1130
+	+pie-clearfix
+	margin-bottom: 15px
+
+.left
+	float: left
+
+.right
+	float: right
+
+.hidden
+	display: none
+
+.nowrap
+	white-space: nowrap

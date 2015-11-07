@@ -1,0 +1,102 @@
+@import '_blocks/imports.sass'
+@import '_blocks/variables.sass'
+@import '_blocks/mixins.sass'
+
+.s-impot-info-fixed-wide
+	+width-1130
+
+.impot-info-header
+	font-size: 20px
+	font-weight: bold
+
+.impot-info-wrap
+	font-size: 14px
+	text-align: justify
+	text-indent: 36px
+	+pie-clearfix
+	margin-bottom: 15px
+
+.impot-info-col-left,
+.impot-info-col-right
+	width: 530px
+
+.impot-info-col-left
+	float: left
+
+.impot-info-col-right
+	float: right
+
+.footer
+	background: url(../img/footer_bg.jpg)
+	padding-top: 35px
+	border-bottom: 1px solid transparent
+
+.footer-fixed-wide
+	+width-1130
+
+.footer-content-wrap
+	+pie-clearfix
+	margin-bottom: 25px
+
+.footer-content-left-col
+	float: left
+	width: 530px
+
+.logo-white
+	display: block
+	padding-top: 37px
+
+.footer-content-right-col
+	float: right
+	width: 530px
+	text-align: right
+
+.nav-links-bottom
+	position: relative
+	left: 15px
+
+.nav-links-bottom__link
+	color: $lght_color
+	font-size: 14px
+	text-decoration: underline
+	line-height: 34px
+	padding: 0 15px
+	&:hover
+		text-decoration: none
+
+// NOTE: Sprites defined in mixins.sass
+.inverse-socials
+	margin-bottom: 18px
+
+.inverse-socials__item
+	display: inline-block
+	margin-left: 27px
+	&.item-vk
+		@include icons-sprite(icon-inverse-vk)
+		$height: icons-sprite-height(icon-inverse-vk)
+		$width: icons-sprite-width(icon-inverse-vk)
+		width: $width
+		height: $height
+	&.item-fb
+		@include icons-sprite(icon-inverse-fb)
+		$height: icons-sprite-height(icon-inverse-fb)
+		$width: icons-sprite-width(icon-inverse-fb)
+		width: $width
+		height: $height
+	&.item-tw
+		@include icons-sprite(icon-inverse-tw)
+		$height: icons-sprite-height(icon-inverse-tw)
+		$width: icons-sprite-width(icon-inverse-tw)
+		width: $width
+		height: $height
+
+.inverse-socials__link
+	width: 100%
+	height: 100%
+	display: block
+
+.copyright
+	color: $lght_color
+	text-align: center
+	font-size: 12px
+	margin-bottom: 15px

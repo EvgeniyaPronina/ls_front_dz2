@@ -1252,6 +1252,8 @@ input {
 
 .clear-checkbox-link {
   color: #5db2fc;
+  text-decoration: underline;
+  background: none;
 }
 
 .range-slider__wrap-fields {

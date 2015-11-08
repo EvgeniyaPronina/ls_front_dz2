@@ -25,34 +25,35 @@
 				input.filter-input.hidden#ac-2(name='accordion-1', type='checkbox')
 				label.filter-title.left-menu__brands(for='ac-2') Бренды
 				.filter-content
-					ul.inner-list
-						li.inner-item
-							label.checkbox-label
-								input.checkbox-input(type='checkbox', name='brands', id='lenovo')
-								.filter__choose-elem-checkbox
-								.filter__choose-text Lenovo
-						li.inner-item
-							label.checkbox-label
-								input.checkbox-input(type='checkbox', name='brands', id='apple')
-								.filter__choose-elem-checkbox
-								.filter__choose-text Apple
-						li.inner-item
-							label.checkbox-label
-								input.checkbox-input(type='checkbox', name='brands', id='samsung')
-								.filter__choose-elem-checkbox
-								.filter__choose-text Samsung
-						li.inner-item
-							label.checkbox-label
-								input.checkbox-input(type='checkbox', name='brands', id='asus')
-								.filter__choose-elem-checkbox
-								.filter__choose-text Asus
-						li.inner-item
-							label.checkbox-label
-								input.checkbox-input(type='checkbox', name='brands', id='motorola')
-								.filter__choose-elem-checkbox
-								.filter__choose-text Motorola
-					.clear-checkbox 
-						a.clear-checkbox-link(href='#') Сбросить фильтр
+					form(id='brands-form')
+						ul.inner-list
+							li.inner-item
+								label.checkbox-label
+									input.checkbox-input(type='checkbox', name='brands', id='lenovo')
+									.filter__choose-elem-checkbox
+									.filter__choose-text Lenovo
+							li.inner-item
+								label.checkbox-label
+									input.checkbox-input(type='checkbox', name='brands', id='apple')
+									.filter__choose-elem-checkbox
+									.filter__choose-text Apple
+							li.inner-item
+								label.checkbox-label
+									input.checkbox-input(type='checkbox', name='brands', id='samsung')
+									.filter__choose-elem-checkbox
+									.filter__choose-text Samsung
+							li.inner-item
+								label.checkbox-label
+									input.checkbox-input(type='checkbox', name='brands', id='asus')
+									.filter__choose-elem-checkbox
+									.filter__choose-text Asus
+							li.inner-item
+								label.checkbox-label
+									input.checkbox-input(type='checkbox', name='brands', id='motorola')
+									.filter__choose-elem-checkbox
+									.filter__choose-text Motorola
+						.clear-checkbox 
+							input.clear-checkbox-link(type='reset', value='Сбросить фильтр')
 			li.filter-item
 				input.filter-input.hidden#ac-3(name='accordion-1', type='checkbox')
 				label.filter-title.left-menu__price(for='ac-3') Цена
@@ -88,31 +89,32 @@
 				input.filter-input.hidden#ac-5(name='accordion-1', type='checkbox')
 				label.filter-title.left-menu__os(for='ac-5') Операционные системы
 				.filter-content
-					ul.inner-list
-						li.inner-item
-							label.checkbox-label
-								input.checkbox-input(type='checkbox', name='os', id='android')
-								.filter__choose-elem-checkbox
-								.filter__choose-text Android
-						li.inner-item
-							label.checkbox-label
-								input.checkbox-input(type='checkbox', name='os', id='iOS')
-								.filter__choose-elem-checkbox
-								.filter__choose-text iOS
-						li.inner-item
-							label.checkbox-label
-								input.checkbox-input(type='checkbox', name='os', id='windowsmob')
-								.filter__choose-elem-checkbox
-								.filter__choose-text Windows Mobile
-						li.inner-item
-							label.checkbox-label
-								input.checkbox-input(type='checkbox', name='os', id='symbian')
-								.filter__choose-elem-checkbox
-								.filter__choose-text Symbian
-						li.inner-item
-							label.checkbox-label
-								input.checkbox-input(type='checkbox', name='os', id='custom')
-								.filter__choose-elem-checkbox
-								.filter__choose-text Custom
-					.clear-checkbox 
-						a.clear-checkbox-link(href='#') Сбросить фильтр
+					form
+						ul.inner-list
+							li.inner-item
+								label.checkbox-label
+									input.checkbox-input(type='checkbox', name='os', id='android')
+									.filter__choose-elem-checkbox
+									.filter__choose-text Android
+							li.inner-item
+								label.checkbox-label
+									input.checkbox-input(type='checkbox', name='os', id='iOS')
+									.filter__choose-elem-checkbox
+									.filter__choose-text iOS
+							li.inner-item
+								label.checkbox-label
+									input.checkbox-input(type='checkbox', name='os', id='windowsmob')
+									.filter__choose-elem-checkbox
+									.filter__choose-text Windows Mobile
+							li.inner-item
+								label.checkbox-label
+									input.checkbox-input(type='checkbox', name='os', id='symbian')
+									.filter__choose-elem-checkbox
+									.filter__choose-text Symbian
+							li.inner-item
+								label.checkbox-label
+									input.checkbox-input(type='checkbox', name='os', id='custom')
+									.filter__choose-elem-checkbox
+									.filter__choose-text Custom
+						.clear-checkbox 
+							input.clear-checkbox-link(type='reset', value='Сбросить фильтр')

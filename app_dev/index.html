@@ -95,44 +95,48 @@
 								<input id="ac-2" name="accordion-1" type="checkbox" class="filter-input hidden"/>
 								<label for="ac-2" class="filter-title left-menu__brands">Бренды</label>
 								<div class="filter-content">
-									<ul class="inner-list">
-										<li class="inner-item">
-											<label class="checkbox-label">
-												<input type="checkbox" name="brands" id="lenovo" class="checkbox-input"/>
-												<div class="filter__choose-elem-checkbox"></div>
-												<div class="filter__choose-text">Lenovo</div>
-											</label>
-										</li>
-										<li class="inner-item">
-											<label class="checkbox-label">
-												<input type="checkbox" name="brands" id="apple" class="checkbox-input"/>
-												<div class="filter__choose-elem-checkbox"></div>
-												<div class="filter__choose-text">Apple</div>
-											</label>
-										</li>
-										<li class="inner-item">
-											<label class="checkbox-label">
-												<input type="checkbox" name="brands" id="samsung" class="checkbox-input"/>
-												<div class="filter__choose-elem-checkbox"></div>
-												<div class="filter__choose-text">Samsung</div>
-											</label>
-										</li>
-										<li class="inner-item">
-											<label class="checkbox-label">
-												<input type="checkbox" name="brands" id="asus" class="checkbox-input"/>
-												<div class="filter__choose-elem-checkbox"></div>
-												<div class="filter__choose-text">Asus</div>
-											</label>
-										</li>
-										<li class="inner-item">
-											<label class="checkbox-label">
-												<input type="checkbox" name="brands" id="motorola" class="checkbox-input"/>
-												<div class="filter__choose-elem-checkbox"></div>
-												<div class="filter__choose-text">Motorola</div>
-											</label>
-										</li>
-									</ul>
-									<div class="clear-checkbox"> <a href="#" class="clear-checkbox-link">Сбросить фильтр</a></div>
+									<form id="brands-form">
+										<ul class="inner-list">
+											<li class="inner-item">
+												<label class="checkbox-label">
+													<input type="checkbox" name="brands" id="lenovo" class="checkbox-input"/>
+													<div class="filter__choose-elem-checkbox"></div>
+													<div class="filter__choose-text">Lenovo</div>
+												</label>
+											</li>
+											<li class="inner-item">
+												<label class="checkbox-label">
+													<input type="checkbox" name="brands" id="apple" class="checkbox-input"/>
+													<div class="filter__choose-elem-checkbox"></div>
+													<div class="filter__choose-text">Apple</div>
+												</label>
+											</li>
+											<li class="inner-item">
+												<label class="checkbox-label">
+													<input type="checkbox" name="brands" id="samsung" class="checkbox-input"/>
+													<div class="filter__choose-elem-checkbox"></div>
+													<div class="filter__choose-text">Samsung</div>
+												</label>
+											</li>
+											<li class="inner-item">
+												<label class="checkbox-label">
+													<input type="checkbox" name="brands" id="asus" class="checkbox-input"/>
+													<div class="filter__choose-elem-checkbox"></div>
+													<div class="filter__choose-text">Asus</div>
+												</label>
+											</li>
+											<li class="inner-item">
+												<label class="checkbox-label">
+													<input type="checkbox" name="brands" id="motorola" class="checkbox-input"/>
+													<div class="filter__choose-elem-checkbox"></div>
+													<div class="filter__choose-text">Motorola</div>
+												</label>
+											</li>
+										</ul>
+										<div class="clear-checkbox"> 
+											<input type="reset" value="Сбросить фильтр" class="clear-checkbox-link"/>
+										</div>
+									</form>
 								</div>
 							</li>
 							<li class="filter-item">
@@ -173,44 +177,48 @@
 								<input id="ac-5" name="accordion-1" type="checkbox" class="filter-input hidden"/>
 								<label for="ac-5" class="filter-title left-menu__os">Операционные системы</label>
 								<div class="filter-content">
-									<ul class="inner-list">
-										<li class="inner-item">
-											<label class="checkbox-label">
-												<input type="checkbox" name="os" id="android" class="checkbox-input"/>
-												<div class="filter__choose-elem-checkbox"></div>
-												<div class="filter__choose-text">Android</div>
-											</label>
-										</li>
-										<li class="inner-item">
-											<label class="checkbox-label">
-												<input type="checkbox" name="os" id="iOS" class="checkbox-input"/>
-												<div class="filter__choose-elem-checkbox"></div>
-												<div class="filter__choose-text">iOS</div>
-											</label>
-										</li>
-										<li class="inner-item">
-											<label class="checkbox-label">
-												<input type="checkbox" name="os" id="windowsmob" class="checkbox-input"/>
-												<div class="filter__choose-elem-checkbox"></div>
-												<div class="filter__choose-text">Windows Mobile</div>
-											</label>
-										</li>
-										<li class="inner-item">
-											<label class="checkbox-label">
-												<input type="checkbox" name="os" id="symbian" class="checkbox-input"/>
-												<div class="filter__choose-elem-checkbox"></div>
-												<div class="filter__choose-text">Symbian</div>
-											</label>
-										</li>
-										<li class="inner-item">
-											<label class="checkbox-label">
-												<input type="checkbox" name="os" id="custom" class="checkbox-input"/>
-												<div class="filter__choose-elem-checkbox"></div>
-												<div class="filter__choose-text">Custom</div>
-											</label>
-										</li>
-									</ul>
-									<div class="clear-checkbox"> <a href="#" class="clear-checkbox-link">Сбросить фильтр</a></div>
+									<form>
+										<ul class="inner-list">
+											<li class="inner-item">
+												<label class="checkbox-label">
+													<input type="checkbox" name="os" id="android" class="checkbox-input"/>
+													<div class="filter__choose-elem-checkbox"></div>
+													<div class="filter__choose-text">Android</div>
+												</label>
+											</li>
+											<li class="inner-item">
+												<label class="checkbox-label">
+													<input type="checkbox" name="os" id="iOS" class="checkbox-input"/>
+													<div class="filter__choose-elem-checkbox"></div>
+													<div class="filter__choose-text">iOS</div>
+												</label>
+											</li>
+											<li class="inner-item">
+												<label class="checkbox-label">
+													<input type="checkbox" name="os" id="windowsmob" class="checkbox-input"/>
+													<div class="filter__choose-elem-checkbox"></div>
+													<div class="filter__choose-text">Windows Mobile</div>
+												</label>
+											</li>
+											<li class="inner-item">
+												<label class="checkbox-label">
+													<input type="checkbox" name="os" id="symbian" class="checkbox-input"/>
+													<div class="filter__choose-elem-checkbox"></div>
+													<div class="filter__choose-text">Symbian</div>
+												</label>
+											</li>
+											<li class="inner-item">
+												<label class="checkbox-label">
+													<input type="checkbox" name="os" id="custom" class="checkbox-input"/>
+													<div class="filter__choose-elem-checkbox"></div>
+													<div class="filter__choose-text">Custom</div>
+												</label>
+											</li>
+										</ul>
+										<div class="clear-checkbox"> 
+											<input type="reset" value="Сбросить фильтр" class="clear-checkbox-link"/>
+										</div>
+									</form>
 								</div>
 							</li>
 						</ul>

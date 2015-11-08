@@ -168,6 +168,26 @@
   margin-bottom: 0;
 }
 
+.catalog-item_border-corrections {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  border-bottom: none;
+}
+
+.catalog-item_border-corrections:first-child {
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 5px 0 0;
+}
+
+.catalog-item_border-corrections:last-child {
+  border-bottom: 1px solid #dee1e4;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0;
+  border-radius: 0 0 5px 5px;
+}
+
 .catalog-item__pics-wrap_bar-style {
   display: inline-block;
   width: 117px;

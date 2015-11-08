@@ -117,6 +117,15 @@ $viev-spacing: 50px
 .catalog-item_no-margin
 	margin-bottom: 0
 
+.catalog-item_border-corrections
+	+border-radius(0px)
+	border-bottom: none
+	&:first-child
+		+border-radius(5px 5px 0 0)
+	&:last-child
+		border-bottom: 1px solid $btn_brd_color
+		+border-radius(0 0 5px 5px)
+
 .catalog-item__pics-wrap
 
 .catalog-item__pics-wrap_bar-style

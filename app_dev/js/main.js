@@ -27,6 +27,7 @@ $(document).ready(function() {
 		$('.catalog-item__smlpics').removeClass('hidden');
 		$('.catalog-item').addClass('catalog-item_width-auto');
 		$('.catalog-item').addClass('catalog-item_no-margin');
+		$('.catalog-item').addClass('catalog-item_border-corrections');
 		$('.catalog-item__pics-wrap').addClass('catalog-item__pics-wrap_width182');
 		$('.catalog-item__pics-wrap').addClass('left');
 		$('.catalog-item__header-and-desct-wrap').addClass('left');
@@ -60,6 +61,7 @@ $(document).ready(function() {
 		$('.catalog-item__smlpics').removeClass('hidden');
 		$('.catalog-item').removeClass('catalog-item_width-auto');
 		$('.catalog-item').removeClass('catalog-item_no-margin');
+		$('.catalog-item').removeClass('catalog-item_border-corrections');
 		$('.catalog-item__pics-wrap').removeClass('catalog-item__pics-wrap_width182');
 		$('.catalog-item__pics-wrap').removeClass('left');
 		$('.catalog-item__header-and-desct-wrap').removeClass('left');
@@ -93,6 +95,7 @@ $(document).ready(function() {
 		$('.catalog-item__smlpics').addClass('hidden');
 		$('.catalog-item').addClass('catalog-item_width-auto');
 		$('.catalog-item').addClass('catalog-item_no-margin');
+		$('.catalog-item').addClass('catalog-item_border-corrections');
 		$('.catalog-item__pics-wrap').removeClass('catalog-item__pics-wrap_width182');
 		$('.catalog-item__pics-wrap').removeClass('left');
 		$('.catalog-item__description').addClass('hidden');
